@@ -39,11 +39,9 @@ main{height:100dvh;padding:var(--pad);display:grid;grid-template-columns:minmax(
 .me h1{margin-top:clamp(16px,2.6vh,28px);font-size:clamp(26px,2.4vw,38px);font-weight:500;line-height:1.05;letter-spacing:-.03em}
 .me .role{margin-top:6px;font-size:clamp(15px,1.15vw,18px)}
 .me .bio{margin-top:clamp(14px,2vh,22px);max-width:30ch;font-size:clamp(15px,1.15vw,18px);line-height:1.38;letter-spacing:-.01em}
-/* every text link looks the same: white, thin underline, arrow */
-.ct a,.cap nav a{color:var(--fg);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:#5a5a5a;transition:text-decoration-color .2s}
-.ct a::after,.cap nav a::after{content:"\2009\2197";display:inline-block;text-decoration:none;transition:transform .2s}
-.ct a:hover,.cap nav a:hover{text-decoration-color:var(--fg)}
-.ct a:hover::after,.cap nav a:hover::after{transform:translate(2px,-2px)}
+/* every text link looks the same: gray, thin underline */
+.ct a,.cap nav a{color:var(--dim);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px;text-decoration-color:currentColor;transition:color .2s}
+.ct a:hover,.cap nav a:hover{color:var(--fg)}
 .ct{margin-top:auto;display:flex;gap:clamp(16px,1.6vw,28px);font-size:clamp(15px,1.15vw,18px)}
 
 /* right: two projects, screenshot at its own ratio + text beside it */
